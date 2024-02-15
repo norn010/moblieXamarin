@@ -2,8 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using moblie113.ViewsModels;
-using moblie113.Views;
 using moblie113.Models;
+using moblie113.Views;
 
 namespace mobile113.Views
 {
@@ -14,7 +14,13 @@ namespace mobile113.Views
         {
             InitializeComponent();
             BindingContext = new BookListViewModel();
+        }
 
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            // โหลดข้อมูลใหม่ทุกครั้งที่หน้าปรากฏขึ้น
+            (BindingContext as BookListViewModel)?.GetBooks();
         }
 
         private async void AddBook_Clicked(object sender, EventArgs e)
@@ -22,6 +28,7 @@ namespace mobile113.Views
             var addBookPage = new AddBook();
             await Navigation.PushAsync(addBookPage);
         }
+
         private async void DeleteCommand(object sender, EventArgs e)
         {
             var viewModel = (BookListViewModel)BindingContext;

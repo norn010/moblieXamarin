@@ -120,6 +120,7 @@ namespace moblie113.ViewsModels
             AddBookCommand = new Command(async () =>
             {
                 await AddBook();
+
             });
         }
 

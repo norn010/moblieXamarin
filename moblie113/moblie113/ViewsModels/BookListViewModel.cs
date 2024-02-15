@@ -57,6 +57,7 @@ namespace moblie113.ViewsModels
                     if (confirmDelete)
                     {
                         await DeleteBook(selectedProduct);
+
                     }
                 }
             });
