@@ -48,12 +48,20 @@ namespace moblie113.APIs
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> UpdateBook(BookModel item)
+        public async Task<bool> UpdateBook(BookModel book)
         {
-            var json = JsonConvert.SerializeObject(item);
-            var content = new StringContent(json, Encoding.UTF8, "application/json");
-            var response = await _client.PutAsync(_baseUrl + "books1/" + item.book_Id, content);
-            return response.IsSuccessStatusCode;
+            try
+            {
+                var json = JsonConvert.SerializeObject(book);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+                var response = await _client.PutAsync($"{_baseUrl}/books1/{book.book_Id}", content);
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+                throw;
+            }
         }
 
         public async Task<bool> DeleteBook(int bookId)

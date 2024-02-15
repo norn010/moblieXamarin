@@ -14,6 +14,7 @@ namespace mobile113.Views
         {
             InitializeComponent();
             BindingContext = new BookListViewModel();
+
         }
 
         private async void AddBook_Clicked(object sender, EventArgs e)

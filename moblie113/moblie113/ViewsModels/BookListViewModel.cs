@@ -41,9 +41,9 @@ namespace moblie113.ViewsModels
             {
                 if (selectedProduct != null)
                 {
-                    var BookDetail = new BookDetail
+                    var BookDetail = new BookDetail(selectedProduct)
                     {
-                        BindingContext = selectedProduct
+                        BindingContext = new BookDetailViewModel(selectedProduct)
                     };
                     await Application.Current.MainPage.Navigation.PushModalAsync(BookDetail);
                 }
@@ -84,7 +84,7 @@ namespace moblie113.ViewsModels
             }
         }
 
-        private async void GetBooks()
+        public async void GetBooks()
         {
             Book = await apiService.GetBooks();
         }

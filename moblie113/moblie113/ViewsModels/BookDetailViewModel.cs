@@ -16,6 +16,7 @@ namespace moblie113.ViewsModels
 
         ApiService apiService;
 
+       
         public BookDetailViewModel(BookModel book)
         {
             Book = book;
@@ -28,10 +29,6 @@ namespace moblie113.ViewsModels
             });
         }
 
-        public BookDetailViewModel()
-        {
-        }
-
         async Task UpdateBook()
         {
             try
@@ -39,13 +36,12 @@ namespace moblie113.ViewsModels
                 var response = await apiService.UpdateBook(Book);
                 if (response)
                 {
-                    await Application.Current.MainPage.DisplayAlert("UpdateBook", "UPDATED!!!", "ok");
+                    await Application.Current.MainPage.DisplayAlert("UpdateBook", "UPDATED!!!", "OK");
                 }
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error updating book: {ex.Message}");
-                // จัดการข้อผิดพลาด
             }
         }
     }

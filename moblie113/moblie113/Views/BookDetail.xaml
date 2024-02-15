@@ -4,43 +4,40 @@
              x:Class="moblie113.Views.BookDetail"
              Title="Book Detail">
 
-
     <ContentPage.Content>
         <StackLayout Margin="20">
             <StackLayout>
                 <Label Text="Title" />
-                <Entry Text="{Binding book_Name}" />
+                <Entry Text="{Binding Book.book_Name}" />
             </StackLayout>
 
             <StackLayout>
                 <Label Text="Author" />
-                <Entry Text="{Binding author}" />
+                <Entry Text="{Binding Book.author}" />
             </StackLayout>
             <StackLayout>
                 <Label Text="Image" />
-                <Editor Text="{Binding image}" />
+                <Editor Text="{Binding Book.image}" />
             </StackLayout>
 
             <StackLayout>
                 <Label Text="Description" />
-                <Editor Text="{Binding detail}" />
+                <Editor Text="{Binding Book.detail}" />
             </StackLayout>
             <StackLayout>
                 <Label Text="Price" />
-                <Editor Text="{Binding price}" />
+                <Editor Text="{Binding Book.price}" />
             </StackLayout>
             <StackLayout>
                 <Label Text="Download" />
-                <Editor Text="{Binding download}" />
+                <Editor Text="{Binding Book.download}" />
             </StackLayout>
             <StackLayout>
                 <Label Text="Type" />
-                <Editor Text="{Binding type}" />
+                <Editor Text="{Binding Book.type}" />
             </StackLayout>
 
-            <Button Text="Save"
-            Command="{Binding SaveCommand}" />
-
+            <Button Text="Save" Command="{Binding SaveCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

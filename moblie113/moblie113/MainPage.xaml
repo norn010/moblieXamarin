@@ -13,25 +13,6 @@
         </x:Arguments>
     </NavigationPage>
 
-    <!-- Library Tab -->
-    <NavigationPage Title="Library">
-        <x:Arguments>
-            <ContentPage Title="Library" />
-        </x:Arguments>
-    </NavigationPage>
-
-    <!-- Cart Tab -->
-    <NavigationPage Title="Cart">
-        <x:Arguments>
-            <ContentPage Title="Cart" />
-        </x:Arguments>
-    </NavigationPage>
-
-    <!-- Profile Tab -->
-    <NavigationPage Title="Profile">
-        <x:Arguments>
-            <ContentPage Title="Profile" />
-        </x:Arguments>
-    </NavigationPage>
+    
 
 </TabbedPage>
