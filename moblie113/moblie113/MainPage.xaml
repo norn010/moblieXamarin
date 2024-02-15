@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- MainPage.xaml -->
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:moblie113.Views"
+            x:Class="moblie113.MainPage">
+
+    <!-- Home Tab -->
+    <NavigationPage Title="Home">
+        <x:Arguments>
+            <local:Home />
+            
+        </x:Arguments>
+    </NavigationPage>
+
+    <!-- Library Tab -->
+    <NavigationPage Title="Library">
+        <x:Arguments>
+            <ContentPage Title="Library" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <!-- Cart Tab -->
+    <NavigationPage Title="Cart">
+        <x:Arguments>
+            <ContentPage Title="Cart" />
+        </x:Arguments>
+    </NavigationPage>
+
+    <!-- Profile Tab -->
+    <NavigationPage Title="Profile">
+        <x:Arguments>
+            <ContentPage Title="Profile" />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>
