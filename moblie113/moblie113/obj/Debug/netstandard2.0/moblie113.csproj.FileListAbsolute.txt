@@ -74,3 +74,24 @@ C:\Users\Galax\Downloads\moblie113\moblie113\moblie113\moblie113\obj\Debug\netst
 C:\Users\Galax\Downloads\moblie113\moblie113\moblie113\moblie113\obj\Debug\netstandard2.0\refint\moblie113.dll
 C:\Users\Galax\Downloads\moblie113\moblie113\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.pdb
 C:\Users\Galax\Downloads\moblie113\moblie113\moblie113\moblie113\obj\Debug\netstandard2.0\Views\AddBook.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\bin\Debug\netstandard2.0\moblie113.deps.json
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\bin\Debug\netstandard2.0\moblie113.dll
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\bin\Debug\netstandard2.0\ref\moblie113.dll
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\bin\Debug\netstandard2.0\moblie113.pdb
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.csproj.AssemblyReference.cache
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\Views\AddBook.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\Views\BookDetail.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\Views\BookList.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\Views\Cart.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\Views\Home.xaml.g.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.AssemblyInfoInputs.cache
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.AssemblyInfo.cs
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.csproj.CoreCompileInputs.cache
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.sourcelink.json
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.dll
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\refint\moblie113.dll
+C:\Users\Galax\Downloads\moblie113\New folder\moblieXamarin\moblie113\moblie113\obj\Debug\netstandard2.0\moblie113.pdb

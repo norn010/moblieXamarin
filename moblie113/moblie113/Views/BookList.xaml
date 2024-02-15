@@ -18,18 +18,21 @@
 
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Grid>
+                        <Grid Padding="10"  >
                             <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
-                            <Image HeightRequest="60" WidthRequest="60" Grid.RowSpan="2"
+                            <Image HeightRequest="120" WidthRequest="90" Grid.RowSpan="2"
                    Source="{Binding image}"/>
                             <Label Grid.Column="1" Grid.Row="0" Text="{Binding book_Name}"/>
                             <Label Grid.Row="1" Grid.Column="1" Text="{Binding price}"/>
+                            <Button Grid.Row="2" Grid.Column="1" Text="Delete" Clicked="DeleteCommand" />
+
                         </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>

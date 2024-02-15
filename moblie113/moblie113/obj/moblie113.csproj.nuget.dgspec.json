@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj": {}
+    "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj": {
+    "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj",
+        "projectUniqueName": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj",
         "projectName": "moblie113",
-        "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj",
+        "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj",
         "packagesPath": "C:\\Users\\Galax\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\obj\\",
+        "outputPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

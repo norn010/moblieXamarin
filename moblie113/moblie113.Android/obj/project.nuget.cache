@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "82Kjf+wa7OjpCPFKG3bGrmulnbYjNT/H/97Uad7qE3H19B6OH1cLPRYA0nWjMESkFq6eUlrD98uNVexR1fjpuQ==",
+  "dgSpecHash": "pKHjRdKleAdHzKsee8Rf2H95odJwc0kPgTQzozyVBi5fTgE4rC0e2LrIO86fHQK0KytnWke8kCESnpq3RdN0Pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
+  "projectFilePath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Galax\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Galax\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",

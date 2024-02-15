@@ -3460,11 +3460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
       "projectName": "moblie113.Android",
-      "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
+      "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\moblie113.Android.csproj",
       "packagesPath": "C:\\Users\\Galax\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113.Android\\obj\\",
+      "outputPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3487,8 +3487,8 @@
       "frameworks": {
         "monoandroid13.0": {
           "projectReferences": {
-            "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj": {
-              "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\moblie113\\moblie113\\moblie113\\moblie113.csproj"
+            "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj": {
+              "projectPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\moblie113.csproj"
             }
           }
         }

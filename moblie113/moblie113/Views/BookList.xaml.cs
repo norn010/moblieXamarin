@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using moblie113.ViewsModels;
 using moblie113.Views;
+using moblie113.Models;
 
 namespace mobile113.Views
 {
@@ -19,6 +20,13 @@ namespace mobile113.Views
         {
             var addBookPage = new AddBook();
             await Navigation.PushAsync(addBookPage);
+        }
+        private async void DeleteCommand(object sender, EventArgs e)
+        {
+            var viewModel = (BookListViewModel)BindingContext;
+            var book = (sender as Button)?.BindingContext as BookModel;
+            if (book != null)
+                viewModel.DeleteCommand.Execute(book);
         }
     }
 }

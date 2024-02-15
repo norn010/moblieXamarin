@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Threading.Tasks;
 using moblie113.Models;
 using Xamarin.Forms;
-using mobile113.Views;
 using moblie113.APIs;
 using moblie113.Views;
 
@@ -14,55 +12,92 @@ namespace moblie113.ViewsModels
     internal class BookListViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
+
         public ObservableCollection<BookModel> Book
         {
-            get
-            {
-                return myproducts;
-            }
+            get { return myproducts; }
             set
             {
                 myproducts = value;
-                var args = new PropertyChangedEventArgs(nameof(Book));
-                PropertyChanged?.Invoke(this, args);
+                OnPropertyChanged(nameof(Book));
             }
         }
 
-        ObservableCollection<BookModel> myproducts;
+        private ObservableCollection<BookModel> myproducts;
         public Command SelectCommnd { get; }
-        public BookModel selectedProduct { get; set; }
+        public Command DeleteCommand { get; }
 
-        ApiService apiService;
+
+        private ApiService apiService;
 
         public BookListViewModel()
         {
             Book = new ObservableCollection<BookModel>();
             apiService = new ApiService();
 
-            GetProduct();
+            GetBooks();
 
             SelectCommnd = new Command(async () =>
             {
-                var BookDetail = new BookDetail
+                if (selectedProduct != null)
                 {
-                    BindingContext = selectedProduct
-                };
-                await Application.Current.MainPage.Navigation.PushModalAsync(BookDetail);
+                    var BookDetail = new BookDetail
+                    {
+                        BindingContext = selectedProduct
+                    };
+                    await Application.Current.MainPage.Navigation.PushModalAsync(BookDetail);
+                }
+            });
+
+            DeleteCommand = new Command(async () =>
+            {
+                if (selectedProduct != null)
+                {
+                    var confirmDelete = await Application.Current.MainPage.DisplayAlert("Confirm Delete", $"Are you sure you want to delete {selectedProduct.book_Name}?", "Yes", "No");
+                    if (confirmDelete)
+                    {
+                        await DeleteBook(selectedProduct);
+                    }
+                }
             });
         }
 
-        async void GetProduct()
+        private async Task DeleteBook(BookModel book)
+        {
+            try
+            {
+                bool isSuccess = await apiService.DeleteBook(book.book_Id);
+                if (isSuccess)
+                {
+                    Book.Remove(book);
+                    selectedProduct = null;
+                    OnPropertyChanged(nameof(Book));
+                }
+                else
+                {
+                    await Application.Current.MainPage.DisplayAlert("Error", "Failed to delete book", "OK");
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+            }
+        }
+
+        private async void GetBooks()
         {
             Book = await apiService.GetBooks();
         }
 
-        private async void AddBook_Clicked(object sender, EventArgs e)
+        protected virtual void OnPropertyChanged(string propertyName)
         {
-            var addBookPage = new AddBook();
-            await Application.Current.MainPage.Navigation.PushAsync(addBookPage);
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
+        public BookModel selectedProduct { get; set; }
     }
 }
+
 
 /*using System;
 using System.Collections.ObjectModel;

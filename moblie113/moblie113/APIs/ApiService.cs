@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Net.Http;
-using System.Threading.Tasks;
 using System.Collections.ObjectModel;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using moblie113.Models;
 using Newtonsoft.Json;
-
 
 namespace moblie113.APIs
 {
@@ -19,6 +17,7 @@ namespace moblie113.APIs
         {
             _client = new HttpClient();
         }
+
         public async Task<ObservableCollection<BookModel>> GetBooks()
         {
             ObservableCollection<BookModel> Items = null;
@@ -26,20 +25,21 @@ namespace moblie113.APIs
             try
             {
                 var response = await _client.GetAsync($"{_baseUrl}/books1");
-                if (response.IsSuccessStatusCode) 
+                if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
                     Items = JsonConvert.DeserializeObject<ObservableCollection<BookModel>>(content);
                     return Items;
                 }
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 Console.WriteLine(ex);
                 throw;
             }
             return null;
         }
+
         public async Task<bool> AddBook(BookModel item)
         {
             var json = JsonConvert.SerializeObject(item);
@@ -55,19 +55,12 @@ namespace moblie113.APIs
             var response = await _client.PutAsync(_baseUrl + "books1/" + item.book_Id, content);
             return response.IsSuccessStatusCode;
         }
-    }
-}
 
-
-        /*public async Task<bool> Register(Register Item)
+        public async Task<bool> DeleteBook(int bookId)
         {
             try
             {
-                string json = JsonConvert.SerializeObject(Item);
-                StringContent sContent = new StringContent(json,Encoding.UTF8, "application/json");
-
-                var response = await client.PostAsync("Http://10.0.2.2:59360/api/Account/Register", sContent);
-
+                var response = await _client.DeleteAsync($"{_baseUrl}/books1/{bookId}");
                 return response.IsSuccessStatusCode;
             }
             catch (Exception ex)
@@ -75,5 +68,27 @@ namespace moblie113.APIs
                 Console.WriteLine(ex);
                 throw;
             }
-        }*/
-    
+        }
+    }
+}
+
+
+
+/*public async Task<bool> Register(Register Item)
+{
+    try
+    {
+        string json = JsonConvert.SerializeObject(Item);
+        StringContent sContent = new StringContent(json,Encoding.UTF8, "application/json");
+
+        var response = await client.PostAsync("Http://10.0.2.2:59360/api/Account/Register", sContent);
+
+        return response.IsSuccessStatusCode;
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine(ex);
+        throw;
+    }
+}*/
+

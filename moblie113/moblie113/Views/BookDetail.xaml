@@ -1,9 +1,9 @@
 ﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:moblie113.ViewsModels"
-             x:Class="mobile113.Views.BookDetail"
+             x:Class="moblie113.Views.BookDetail"
              Title="Book Detail">
-    
+
 
     <ContentPage.Content>
         <StackLayout Margin="20">
