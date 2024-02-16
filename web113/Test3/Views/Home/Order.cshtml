@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Test3.Order>
+
+@{
+    ViewBag.Title = "Order";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+    <h2>Orders</h2>
+    <table class="table">
+        <tr>
+            <th>User Email</th>
+            <th>Product ID</th>
+            <th>Quantity</th>
+            <th>Image</th>
+            <th>Total</th>
+            <th>Date</th>
+        </tr>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.user_email</td>
+                <td>@order.product_id</td>
+                <td>@order.quantity</td>
+                <td><img src="@Url.Content("~/Content/images/" + @order.image)" style="max-width: 100px; max-height: 100px;" /></td>
+                <td>@order.total</td>
+                <td>@order.date</td>
+            </tr>
+        }
+    </table>
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+}
+else
+{
+    <style>
+        .centered-content {
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            padding:33.34%
+        }
+    </style>
+
+    <div class="centered-content">
+        <h1>You haven't logged in yet</h1>
+        <h3>Please <a href="@Url.Action("Login", "Account")">log in</a> to view orders.</h3>
+    </div>
+
+
+}

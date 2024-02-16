@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("moblie113")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13a37a6fa267c413f3a5811d4671ef2fc8b6eccc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fac945bb0e5b4499b92cb0c8cff54c62b506cf0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("moblie113")]
 [assembly: System.Reflection.AssemblyTitleAttribute("moblie113")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

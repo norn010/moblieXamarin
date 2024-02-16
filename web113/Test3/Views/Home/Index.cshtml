@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Test3.Book>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron" style="background-color: #6ECCAF; border-radius: 10px; background-image: url('@Url.Content("~/Content/images/banner.jpg")'); background-size: contain; background-position: center; height: 400px; width: 1200px;">
+</div>
+
+<div class="row" style="padding:15px">
+    <div class="col col-lg-2" style="background-color: #F3ECB0; border-radius: 10px; margin-right:20px ">
+        <h2>หมวดหมู่</h2>
+        <div style="padding-left: 50px">
+            <p class="type" data-type="all">ทั้งหมด</p>
+            <p class="type" data-type="novel">นิยาย</p>
+            <p class="type" data-type="article">บทความ</p>
+            <p class="type" data-type="fantasy">แฟนตาซี</p>
+        </div>
+    </div>
+    <div class="col" style="margin-top:-20px; padding:10px">
+        <h2>รายการล่าสุด</h2>
+        <div class="container">
+            <div class="row" id="latest-books">
+                @foreach (var item in Model.OrderByDescending(x => x.book_Id).Take(3).Reverse())
+                {
+                    <div class="col-md-3 book-item" data-type="@item.type">
+                        <div class="thumbnail">
+                            <img class="img-responsive" style="max-width: 140px; border-radius: 10px; max-height:202px;" src="@Url.Content("~/Content/images/" + item.image)" />
+                            <div class="caption">
+                                @Html.ActionLink(@item.book_Name, "Details", new { id = item.book_Id })
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <h2 class="all-books-title" id="all-books-title">รายการทั้งหมด</h2>
+        <div class="container">
+            <div class="row all-books" id="all-books">
+                @{ var count = 0; }
+                @foreach (var item in Model)
+                {
+                    if (count % 4 == 0)
+                    {
+                        if (count > 0)
+                        {
+                        @:</div> <!-- Close the previous row if not the first one -->
+                    }
+                    @:<div class="row">
+ <!-- Open a new row for every 4 items -->
+                    }
+                    <div class="col-md-3 book-item" data-type="@item.type">
+                        <div class="thumbnail">
+                            <img class="img-responsive" style="max-width: 140px; border-radius: 10px; max-height:202px;" src="@Url.Content("~/Content/images/" + item.image)" />
+                            <div class="caption">
+                                @Html.ActionLink(@item.book_Name, "Details", new { id = item.book_Id })
+                            </div>
+                        </div>
+                    </div>
+                    count++;
+                }
+                @if (count % 4 != 0)
+                {
+                @:</div> <!-- Close the row if it's not already closed -->
+            }
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".type").click(function () {
+                var type = $(this).data("type");
+                if (type != "all") {
+                    $(".list-all-text").hide();
+                    $(".all-books .book-item").hide();
+                    $(".all-books .book-item[data-type='" + type + "']").show();
+                    $("h2#all-books-title").text("รายการทั้งหมด - " + type);
+                } else {
+                    $(".all-books .book-item[data-type='" + type + "']").hide();
+                    $(".list-all-text").show();
+                    $(".all-books .book-item").show();
+                    $("h2#all-books-title").text("รายการทั้งหมด");
+                }
+
+            });
+        });
+    </script>

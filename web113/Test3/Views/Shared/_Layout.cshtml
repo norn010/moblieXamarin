@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    @if (User.Identity.Name != "admin@admin" && User.Identity.Name != "admin2@admin")
+    {
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #344D67;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Nangsue E-Book", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    <form class="navbar-form navbar-left" role="search" action="@Url.Action("Search", "Home")" method="get">
+                        <div class="input-group">
+                            <input type="text" name="query" class="form-control" placeholder="ค้นหาหนังสือ">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit">ค้นหา</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("หน้าหลัก", "Index", "Home")</li>
+                        <li>@Html.ActionLink("หน้าคำสั่งซื้อ", "Order", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+
+    }
+    else
+    {
+        <!-- ส่วนของ Navbar ที่ต้องการแสดงสำหรับ admin@admin.com -->
+        <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #344D67;">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Admin Nangsue E-Book", "Index", "Books", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>@Html.ActionLink("จัดการหนังสือ", "Index", "Books")</li>
+                        <li>@Html.ActionLink("จัดการผู้ใช้", "Index", "AspNetUsers")</li>
+                        <li>@Html.ActionLink("แดนบอร์ด", "Index", "Orders")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+            </div>
+        </div>
+    }
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

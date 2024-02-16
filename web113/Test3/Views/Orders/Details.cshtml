@@ -1,0 +1,88 @@
+﻿@model Test3.Order
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .details-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 800px; /* Adjust the maximum width as needed */
+        margin: 0 auto; /* Center the container horizontally */
+    }
+
+    .dl-container {
+        flex: 1;
+    }
+
+    .dl-horizontal {
+        margin: 0;
+        padding: 0;
+    }
+
+        .dl-horizontal dt,
+        .dl-horizontal dd {
+            flex: 1;
+            
+        }
+
+    .image-container {
+        flex: 1;
+        text-align: right;
+    }
+
+        .image-container img {
+            max-height: 200px;
+            width: auto;
+        }
+</style>
+
+<h2>Details</h2>
+
+<div class="details-container">
+    <div class="dl-container">
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.user_email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.user_email)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.date)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.date)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.product_id)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.product_id)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.quantity)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.quantity)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => model.total)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.total)
+            </dd>
+
+        </dl>
+    </div>
+</div>
+@Html.ActionLink("Back", "Index")

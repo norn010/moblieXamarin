@@ -1,0 +1,257 @@
+﻿@model IEnumerable<Test3.Order>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+        google.charts.setOnLoadCallback(drawLineChart); // Add this line to call the new function
+
+        function drawChart() {
+            var aggregatedData = {};
+            var uniqueUsers = {};
+            var todayOrders = 0;
+            var totalOrders = 0;
+            var totaluser = 0;
+            var totalAmount = 0;
+            var today = new Date(); // วันที่ปัจจุบัน
+            today.setHours(0, 0, 0, 0); // ตั้งเวลาให้เป็นเวลาเริ่มต้นของวัน
+
+            var todayOrdersCount = 0;
+
+
+            @foreach (var item in Model)
+            {
+                <text>
+                var productId = '@item.product_id';
+                var userId = '@item.user_email';
+                var total = @item.total;
+            var orderDate = new Date('@item.date');
+
+            orderDate.setHours(0, 0, 0, 0); // ตั้งเวลาให้เป็นเวลาเริ่มต้นของวัน
+            var formattedDate = orderDate.toISOString().split('T')[0];
+            if (aggregatedData[productId] === undefined) {
+                        aggregatedData[productId] = total;
+                    } else {
+                        aggregatedData[productId] += total;
+                    }
+
+            if (orderDate.getTime() === today.getTime()) {
+                todayOrders++;
+            }
+
+                    if (uniqueUsers[userId] === undefined) {
+                         uniqueUsers[userId] = true; // Mark the user as counted
+                        totaluser += 1; // Increment the total quantity by 1
+                     }
+                    totalOrders += 1;
+                    totalAmount += @item.total;
+                </text>
+            }
+
+            // Update the summary table values
+            function animateCounter(elementId, endValue, duration) {
+                var startValue = 0;
+                var startTime;
+                var element = document.getElementById(elementId);
+
+                function step(timestamp) {
+                    if (!startTime) {
+                        startTime = timestamp;
+                    }
+                    var progress = timestamp - startTime;
+                    var value = Math.min((progress / duration) * (endValue - startValue), endValue);
+
+                    element.innerText = Math.round(value); // Round to the nearest whole number
+
+                    if (progress < duration) {
+                        requestAnimationFrame(step);
+                    }
+                }
+
+                requestAnimationFrame(step);
+            }
+
+            // Call the animation function for each counter
+            animateCounter('todayOrders', todayOrders, 1000);
+            animateCounter('totalOrders', totalOrders, 1000);
+            animateCounter('totaluser', totaluser, 1000);
+            animateCounter('totalAmount', totalAmount, 1000);
+
+            // Sort aggregatedData by total in descending order
+            var sortedProducts = Object.keys(aggregatedData).sort(function(a, b) {
+                return aggregatedData[b] - aggregatedData[a];
+            });
+
+            // Take the top 5 products and group the rest in "Other"
+            var topProducts = sortedProducts.slice(0, 5);
+            var otherTotal = 0;
+
+            var chartData = [['Task', 'Total']];
+            topProducts.forEach(function(productId) {
+                chartData.push([productId, aggregatedData[productId]]);
+            });
+
+            // Calculate the total for "Other" category
+            sortedProducts.forEach(function(productId) {
+                if (!topProducts.includes(productId)) {
+                    otherTotal += aggregatedData[productId];
+                }
+            });
+
+            // Add "Other" category to chart data
+            if (otherTotal > 0) {
+                chartData.push(['Other', otherTotal]);
+            }
+
+            var data = google.visualization.arrayToDataTable(chartData);
+
+            var options = {
+                title: 'Top 5 Products and Others by Total'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+        }
+
+        function drawLineChart() {
+            var weeklyData = {};
+
+            @foreach (var item in Model)
+            {
+                <text>
+                    var orderDate = new Date('@item.date');
+                    var formattedDate = orderDate.toISOString().split('T')[0];
+
+                    if (weeklyData[formattedDate] === undefined) {
+                        weeklyData[formattedDate] = 1;
+                    } else {
+                        weeklyData[formattedDate] += 1;
+                    }
+                </text>
+            }
+
+            var lineChartData = [['Date', 'Orders']];
+            Object.keys(weeklyData).forEach(function(date) {
+                lineChartData.push([date, weeklyData[date]]);
+            });
+
+            var lineData = google.visualization.arrayToDataTable(lineChartData);
+
+            var lineOptions = {
+                title: 'Orders Over the Week',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var lineChart = new google.visualization.LineChart(document.getElementById('linechart'));
+            lineChart.draw(lineData, lineOptions);
+        }
+    </script>
+    <script>
+       
+    </script>
+    <style>
+        .custom-font {
+            font-size: 50px; /* Adjust the font size as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            height: 100%;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Dashboard</h2>
+    <div style="display: flex; justify-content: space-around;">
+
+        <!-- Box 1 -->
+        <div style="width: 200px; height: 150px; border: 1px solid #ddd; padding: 10px; text-align: center; background-color: #F3ECB0; ">
+            <h4>จำนวนผู้ใช้งาน</h4>
+            <span id="totaluser" class="custom-font"></span>
+        </div>
+
+        <!-- Box 2 -->
+        <div style="width: 200px; height: 150px; border: 1px solid #ddd; padding: 10px; text-align: center; background-color: #ADE792; ">
+            <h4>จำนวนคำสั่งซื้อวันนี้</h4>
+            <span id="todayOrders" class="custom-font"></span>
+        </div>
+
+        <!-- Box 3 -->
+        <div style="width: 200px; height: 150px; border: 1px solid #ddd; padding: 10px; text-align: center; background-color: #6ECCAF; ">
+            <h4>จำนวนคำสั่งซื้อทั้งหมด</h4>
+            <span id="totalOrders" class="custom-font"></span>
+        </div>
+
+        <!-- Box 4 -->
+        <div style="width: 200px; height: 150px; border: 1px solid #ddd; padding: 10px; text-align: center; background-color: #6DABEC; ">
+            <h4>ยอดทั้งหมด</h4>
+            <span id="totalAmount" class="custom-font"></span>
+        </div>
+
+    </div>
+
+
+    <div style="display: flex; justify-content: space-around;">
+        <div id="linechart" style="width: 45%; height: 500px;"></div>
+        <div id="piechart" style="width: 45%; height: 500px;"></div>
+    </div>
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.user_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.product_id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.quantity)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.total)
+            </th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model.Take(100))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.user_email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.product_id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.quantity)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.total)
+                </td>
+                <td>
+                    @Html.ActionLink("Details", "Details", new { id = item.product_id })
+                </td>
+
+            </tr>
+        }
+    </table>
+</body>
+</html>

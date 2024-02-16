@@ -1,0 +1,88 @@
+﻿@model Test3.Book
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" style="margin:20px;">
+    <div class="row justify-content-between">
+        <div class="col-md-3" >
+            <img src="@Url.Content("~/Content/images/" + Model.image)" style="width: 276px; height: 400px; border-radius: 10px; margin-right: 20px;" />
+        </div>
+        <div class="col-md-9" style="height: 400px; background-color: #6ECCAF; border-radius: 10px;">
+            <div class="row justify-content-between " style="padding:20px;">
+                <div class="col-md-10">
+                    @Html.DisplayFor(model => model.book_Name)
+                </div>
+                <div class="col-md-2">
+                  ราคา  @Html.DisplayFor(model => model.price) บาท
+                </div>
+                <div style="margin:15px;">
+                     @Html.DisplayFor(model => model.author)
+                </div>
+            </div>
+    </div>
+</div>
+@*@Html.DisplayNameFor(model => model.book_Name)
+
+
+    <h2>Details</h2>
+
+    <div>
+        <h4>Book</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.book_Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.book_Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.author)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.author)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.image)
+            </dt>
+
+            <dd>
+                <img src=@Url.Content("~/Content/images/"+(@Model.image)) style="width: 276px;height: auto" />
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.detail)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.detail)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.price)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.price)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.download)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.download)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.book_Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

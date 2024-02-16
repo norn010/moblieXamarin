@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Test3.Book>
+@{
+    ViewBag.Title = "Search Results";
+}
+
+<h2>ผลลัพธ์การค้นหา</h2>
+
+<div class="container">
+    <div class="row">
+        @for (var i = 0; i < Model.Count(); i++)
+        {
+            var item = Model.ElementAt(i);
+            <div class="col-md-3">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="@Url.Content("~/Content/images/" + item.image)" />
+                    <div class="caption">
+                        @Html.ActionLink(@item.book_Name, "Details", new { id = item.book_Id })
+                    </div>
+                </div>
+            </div>
+
+            if ((i + 1) % 4 == 0)
+            {
+                <div class="clearfix visible-md-block visible-lg-block"></div>
+            }
+        }
+    </div>
+</div>

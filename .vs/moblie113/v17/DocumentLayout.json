@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\mainpage.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\booklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\booklist.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\booklist.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\booklist.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\viewsmodels\\addbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\viewsmodels\\addbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\apis\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\apis\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\viewsmodels\\bookdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,52 +15,12 @@
       "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\viewsmodels\\booklistviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\bookdetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\bookdetail.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\viewsmodels\\addbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\viewsmodels\\addbookviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\bookdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\bookdetail.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\addbook.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\addbook.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\addbook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\addbook.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\app.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\models\\bookmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\apis\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\apis\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB85AC9-1B54-433B-BE10-98BDCAF47D9C}|moblie113\\moblie113.Android\\moblie113.Android.csproj|C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.android\\properties\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{0EB85AC9-1B54-433B-BE10-98BDCAF47D9C}|moblie113\\moblie113.Android\\moblie113.Android.csproj|solutionrelative:moblie113\\moblie113.android\\properties\\androidmanifest.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0EB85AC9-1B54-433B-BE10-98BDCAF47D9C}|moblie113\\moblie113.Android\\moblie113.Android.csproj|C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.android\\resources\\xml\\network_security_config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0EB85AC9-1B54-433B-BE10-98BDCAF47D9C}|moblie113\\moblie113.Android\\moblie113.Android.csproj|solutionrelative:moblie113\\moblie113.android\\resources\\xml\\network_security_config.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|c:\\users\\galax\\downloads\\moblie113\\new folder\\mobliexamarin\\moblie113\\moblie113\\views\\booklist.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{9FC9622A-2009-4471-A851-DAF9C8E4A78D}|moblie113\\moblie113\\moblie113.csproj|solutionrelative:moblie113\\moblie113\\views\\booklist.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,19 +30,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "BookListViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAIwDoAAAA6AAAA",
+              "DocumentIndex": 0,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\APIs\\ApiService.cs",
+              "RelativeDocumentMoniker": "moblie113\\moblie113\\APIs\\ApiService.cs",
+              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\APIs\\ApiService.cs",
+              "RelativeToolTip": "moblie113\\moblie113\\APIs\\ApiService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.696Z",
+              "WhenOpened": "2024-02-16T08:51:03.818Z",
               "EditorCaption": ""
             },
             {
@@ -105,209 +53,49 @@
               "RelativeDocumentMoniker": "moblie113\\moblie113\\ViewsModels\\AddBookViewModel.cs",
               "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\AddBookViewModel.cs",
               "RelativeToolTip": "moblie113\\moblie113\\ViewsModels\\AddBookViewModel.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAuwH0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T17:55:50.81Z",
+              "WhenOpened": "2024-02-16T08:47:02.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BookList.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\BookList.xaml.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\BookList.xaml.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAlwB8AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.715Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AddBook.xaml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\AddBook.xaml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\AddBook.xaml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\AddBook.xaml",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\AddBook.xaml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-15T17:50:15.932Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BookDetail.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookDetail.xaml.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\BookDetail.xaml.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookDetail.xaml.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\BookDetail.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T19:11:07.686Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BookList.xaml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\BookList.xaml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\BookList.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAowAsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-14T18:52:24.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "BookDetailViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookDetailViewModel.cs",
               "RelativeDocumentMoniker": "moblie113\\moblie113\\ViewsModels\\BookDetailViewModel.cs",
               "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookDetailViewModel.cs",
               "RelativeToolTip": "moblie113\\moblie113\\ViewsModels\\BookDetailViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAABOAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAYwCsAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T21:24:22.165Z",
+              "WhenOpened": "2024-02-16T08:47:01.072Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "BookDetail.xaml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookDetail.xaml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\BookDetail.xaml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookDetail.xaml",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\BookDetail.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAmAAAA",
+              "DocumentIndex": 2,
+              "Title": "BookListViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
+              "RelativeDocumentMoniker": "moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
+              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
+              "RelativeToolTip": "moblie113\\moblie113\\ViewsModels\\BookListViewModel.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAwwC0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T08:38:24.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookList.xaml",
+              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml",
+              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\BookList.xaml",
+              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\BookList.xaml",
+              "RelativeToolTip": "moblie113\\moblie113\\Views\\BookList.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-15T19:10:55.3Z",
+              "WhenOpened": "2024-02-16T08:38:27.55Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\MainPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\MainPage.xaml.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\MainPage.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\MainPage.xaml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\MainPage.xaml",
-              "RelativeToolTip": "moblie113\\moblie113\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-14T18:52:24.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddBook.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\AddBook.xaml.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Views\\AddBook.xaml.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Views\\AddBook.xaml.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\Views\\AddBook.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T20:34:26.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\AssemblyInfo.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\AssemblyInfo.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\AssemblyInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.72Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\App.xaml.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\App.xaml.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\App.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.721Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\App.xaml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\App.xaml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\App.xaml",
-              "RelativeToolTip": "moblie113\\moblie113\\App.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-02-14T18:52:24.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BookModel.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Models\\BookModel.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\Models\\BookModel.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\Models\\BookModel.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\Models\\BookModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.66Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ApiService.cs",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\APIs\\ApiService.cs",
-              "RelativeDocumentMoniker": "moblie113\\moblie113\\APIs\\ApiService.cs",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113\\APIs\\ApiService.cs",
-              "RelativeToolTip": "moblie113\\moblie113\\APIs\\ApiService.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-14T18:52:24.698Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "AndroidManifest.xml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\Properties\\AndroidManifest.xml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113.Android\\Properties\\AndroidManifest.xml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\Properties\\AndroidManifest.xml",
-              "RelativeToolTip": "moblie113\\moblie113.Android\\Properties\\AndroidManifest.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-02-15T16:43:11.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "network_security_config.xml",
-              "DocumentMoniker": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\Resources\\xml\\network_security_config.xml",
-              "RelativeDocumentMoniker": "moblie113\\moblie113.Android\\Resources\\xml\\network_security_config.xml",
-              "ToolTip": "C:\\Users\\Galax\\Downloads\\moblie113\\New folder\\moblieXamarin\\moblie113\\moblie113.Android\\Resources\\xml\\network_security_config.xml",
-              "RelativeToolTip": "moblie113\\moblie113.Android\\Resources\\xml\\network_security_config.xml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2024-02-14T18:52:24.713Z"
             }
           ]
         }
